@@ -1,0 +1,16 @@
+
+Q 2.
+
+1. Number of parameters in 1st convolution layer = ( Height * Width + Bias ) * No.of Channels = (5 * 5 * 1 + 1) * 6 = 156
+
+2. Number of parameters in pooling operation = 0
+
+3. No. of parameters in following:- 
+a) Conv 1 = 156 
+    Conv 2 = (5 * 5 * 6 + 1) * 16 = 2416
+b) Pool = 0 
+c) Fully connected layer (FC) = (84 + 1) * 120 = 10,200 
+d) Activation Functions = 84 
+    So, Fully connected layer contains most number of parameters.
+    
+4. Fully connected layers at the end consume most amount of memory as their weight and activations matrix is more complex than convolutional layers feature map matrix.
